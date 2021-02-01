@@ -1,0 +1,108 @@
+.video-nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    z-index: 99;
+}
+.video-logo{
+    font-size: 42px;
+    font-weight: bold;
+    padding-left: 30px;
+    line-height: 70px;
+    color: #fff;
+    font-family: Arial;
+}
+
+
+/* 测试样式 */
+.navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.navigation__element {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navigation__link {
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 2.57px;
+    font-weight: 300;
+    margin: 0;
+}
+.navigation__link:after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0,1,1,1);
+}
+.navigation__link:hover{
+    color: #fff;
+}
+.navigation__link:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* 底部导航 */
+/* .footer-bar-page{
+    height: 80px;
+    background: #E24255;
+    width: 100%;
+    margin-top: 10%;
+}
+.foot-warp{
+    width: 70%;
+    margin: 0 auto; 
+    color: #fff;
+}
+.foot-share{
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+}
+.foot-copy p{
+    float: right;
+    line-height: 80px;
+    font-size: 14px;
+} */
+.twitter{
+    padding-left: 30px;
+    cursor: pointer;
+}
+.facebook{
+    cursor: pointer;
+}
+.twitter :hover{
+    font-size: 30px;
+}
+.facebook :hover{
+     font-size: 30px;
+}

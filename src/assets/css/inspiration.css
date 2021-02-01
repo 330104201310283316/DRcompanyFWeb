@@ -1,0 +1,111 @@
+.ins_warp{
+    margin-top: 5.7142rem;
+    background-color: #f4f4f4;
+}
+.ins_banner_bg{
+    background: url(../img/ins/001.jpg) no-repeat;
+    width: 100%;
+    height: 28.5714rem;
+    margin-bottom: 5rem;
+}
+.ins_banner_t{
+    color: #fff;
+    font-size: 8.5714rem;
+    line-height: 1;
+    font-family: Trajan W01,Times,Serif;
+    color: #fff;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 30rem;
+    padding-top: 18rem;
+}
+.ins_list{
+    width: 80rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 2.1428rem;
+}
+.ins_item_title{
+    font-size: 1.4rem;
+    line-height: 1.3;
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 3rem 1.4285rem 1.4285rem 2rem;
+    
+}
+.ins_item_title:hover{
+    color: #5d5d5d;
+}
+.ins_item_sub{
+    font-size: 1.1428rem;
+    padding: 0 1.4285rem 1rem 2rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+.in-list-btn{
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 3rem;
+    color: #161616 !important;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom: 2px solid #FE5368 ;
+}
+
+.ins_list_item{
+    margin-top: 3rem;
+    background-color: #fff;
+    border: 1px solid #D5D5D5;
+}
+.ins_list_img_box{
+/*  margin: 50px auto; */
+  overflow: hidden;
+}
+.ins_list_img_box img{ 
+    cursor: pointer;
+    transition: all 1s;
+}
+.ins_list_img_box img:hover{
+  transform: scale(1.4);
+  /* transition: transform 4s cubic-bezier(.17,.67,.24,.94); */
+ /* https://www.crfashionbook.com/fashion/ */
+}
+.go-login-warp{
+    height: 200px;
+    margin-top: 10rem;
+}
+.go-login{
+    width: 160px;
+    height: 48px;
+    border: 1px solid #858585;
+    margin:  0 auto;
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 400;
+    color: #858585;
+    display: block;
+}
+.go-login:hover{
+    border: 1px solid #161616;
+    color: #161616;    
+}
+
+/* 详情页面 */
+.inspirationDetails_main{
+    padding-top:10rem;
+    width: 71.4285rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,154 @@
+.slide{
+	height:0;
+	transition: height 0.3s ease;
+	-webkit-transition:height 0.3s ease; 
+	overflow: hidden;
+}
+.slideDown{
+	height: 350px;
+}
+.navigation-no-bg{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    /* color: #161616; */
+	color: #fff;
+    z-index: 9;
+}
+.navigation-bg{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	color: #161616;
+	z-index: 9;
+	background-color: #fff;
+}
+.navigation2-logo{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 70px;
+    color: #FE5368;
+    font-family: Arial;
+    padding-left: 100px;
+}
+
+.navigation_list2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navigation_list2 li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 80px;
+}
+.navigation_list2-61 li{
+	
+}
+.navigation-no-bg-contact2{
+    line-height: 80px;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    padding-right: 100px;
+}
+.sod-nav{
+    background: #FAF9F8;
+}
+.sod-img{
+    margin: 0 auto;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    display: block;
+}
+.sod-text{
+    text-align: center;
+    padding-bottom: 8%;
+    font-size: 14px;
+    color: #161616;
+}
+
+.home:hover{
+   color: #FE5368;
+   cursor: pointer;
+}
+
+li{
+	transition: 1s;
+} */
+
+@keyframes myfirst{
+   0% {
+       background-color: #4ec7f3;
+       top: 0px;
+   }
+   25% {
+       background-color: #4ec7f3;
+       top: 0px;
+   }
+   50% {
+       background: #42c58a;
+       top: -60px;
+   }
+   75% {
+       background: #a0a0a0;
+       top: -120px;
+   }
+   100% {
+       background: #dc143c;
+       top: -180px;
+   }
+   
+}
+
+/* 底部导航 */
+
+.footer-bar-page{
+    position: fixed;
+    height: 80px;
+    /* background: #E24255; */
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    bottom: -80px;
+	transition: bottom 0.5s;
+}
+.showFooter{
+	bottom: 0;
+}
+.foot-warp{
+    width: 70%;
+    margin: 0 auto; 
+    color: #fff;
+}
+.foot-share{
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+}
+.foot-copy p{
+    float: right;
+    line-height: 80px;
+    font-size: 14px;
+}
+.twitter{
+    padding-left: 30px;
+    cursor: pointer;
+}
+.facebook{
+    cursor: pointer;
+}
+.twitter :hover{
+    font-size: 30px;
+}
+.facebook :hover{
+     font-size: 30px;
+}
+
+

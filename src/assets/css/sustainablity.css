@@ -1,0 +1,31 @@
+.sus_main{
+    width: 71.4285rem;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 100px;
+}
+.sus_main-warp{
+    padding-bottom: 14.2857rem;
+}
+.sus_text_warp{
+    padding-bottom: 13.4285rem;
+}
+.sus_text_p18{
+    font-size: 1.2857rem;
+}
+.sus_text_p15{
+    font-size: 1.0714rem;
+    font-weight: bold;
+}
+.sus_text_p14{
+    font-size: 1rem;
+    color: #858585;
+}
+.sus_text_p30{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sus_pt_20{
+    padding-top: 1.4285rem;
+}
+

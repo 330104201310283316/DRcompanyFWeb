@@ -1,0 +1,128 @@
+.video_top_bar{
+    height: 5.7142rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color:transparent;
+    width: 100%;
+    z-index: 9;
+}
+.video_top_logo{
+    margin-left: 7.1428rem;
+    margin-top:1.4285rem;
+    cursor: pointer;
+}
+.video_navigation_list{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.video_navigation_list li{
+    display: inline-block;
+    padding-left: 2.8571rem;
+    padding-right: 2.8571rem;
+    line-height: 5.7142rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.video_contact{
+    color: #fff;
+    float: right;
+    padding-right: 7.1428rem;
+    line-height: 5.7142rem;
+}
+/* 有背景色 */
+.video_top_bar_bg{
+    background-color: #fff;
+}
+.black_color li{
+    color: #161616;
+}
+.black_c_con{
+    color: #161616;
+}
+
+/* 二级导航 */
+.slide{
+	height:0;
+	transition: height 0.3s ease;
+	-webkit-transition:height 0.3s ease; 
+	overflow: hidden;
+}
+.slideDown{
+	height:25rem;
+}
+.second_nav{
+  /* background: #FAF9F8; */
+   
+   background:rgba(250,249,248,0.5) !important;
+}
+.second_img{
+    margin: 0 auto;
+    margin-top: 2.8571rem;
+    margin-bottom: 1.4285rem;
+    display: block;
+}
+
+.navigation-bg2{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	color: #161616;
+	z-index: 9;
+/* 	background-color: #fff; */
+}
+
+.second-text{
+    text-align: center;
+    font-size: 14px;
+    color: #161616;
+    cursor: pointer;
+}
+
+/* 底部导航 */
+
+.footer-bar-page{
+    position: fixed;
+    height: 80px;
+    background: #E24255;
+    width: 100%;
+    left: 0;
+    bottom: -80px;
+	transition: bottom 0.5s;
+}
+.showFooter{
+	bottom: 0;
+}
+.foot-warp{
+    width: 70%;
+    margin: 0 auto; 
+    color: #fff;
+}
+.foot-share{
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+}
+.foot-copy p{
+    float: right;
+    line-height: 80px;
+    font-size: 14px;
+}
+.twitter{
+    padding-left: 30px;
+    cursor: pointer;
+}
+.facebook{
+    cursor: pointer;
+}
+.twitter :hover{
+    font-size: 30px;
+}
+.facebook :hover{
+     font-size: 30px;
+}
+
+

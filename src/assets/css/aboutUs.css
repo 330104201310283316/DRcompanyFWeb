@@ -1,0 +1,130 @@
+/* 关于公司 */
+.company-page{
+    width: 100%;
+    height: 100vh;
+}
+.about-company-img{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+.about-company-info{
+    width: 100%;
+}
+.company-text{
+    width: 90%;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 15rem;
+}
+
+/* factory */
+.factory_page{
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+}
+.factory_banner{
+    width: 100%;
+    height: auto;
+}
+.factory_main{
+    width:71.4285rem;
+    margin: 0 auto;
+    padding-bottom: 14.2857rem;
+    padding-top: 7.1428rem;
+}
+.factory_main_p{
+    font-size: 1.1rem;
+    color: #000;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+}
+.factory_partner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.2857rem;
+}
+.factory_partner_img1{
+    width: 7.3571rem;
+    height: 7.3571rem !important;
+}
+.factory_partner_img2{
+    width: 12.4285rem;
+    height: 3.4285rem !important;
+    margin-top: 1.4285rem;
+}
+.factory_partner_im3g{
+    width: 10rem;
+    height: 4.8571rem !important;
+}
+.factory_partner_img4{
+    width: 13.4285rem;
+    height: 6.1428rem !important;
+}
+.factory_video{}
+.factory_video_title{
+    font-size: 2.1428rem;
+    font-weight: 400;
+    line-height: 34px;
+    color: #222222;
+    padding-top: 14.2857rem;
+    text-align: center;
+}
+.factory_video_info{
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+.factory_video_info_item{
+    font-size: 1.3rem;
+    padding-right: 3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.factory_video_player{
+    background: url(../img/aboutUs/factory_video_test.png) no-repeat;
+    width: 71.4285rem;
+    height: 39.2857rem;
+    margin-top: 2.8571rem;
+}
+.factory_manage{
+    
+}
+.factory_manage_item{
+    display: flex;
+    align-item:center;
+    margin-bottom: 10rem;
+}
+.factory_manage_item_text{
+    width: 50%;
+}
+.factory_manage_item_text_p2{
+   font-size: 1.7rem;
+   color: #000; 
+}
+.factory_manage_item_text_p1{
+   font-size: 1.2rem;
+   color: #000; 
+}
+.factory_manage_item_text_p{
+    font-size: 1.1rem;
+    color: #000;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+}
+.factory_manage_item_img-warp{
+    width: 50%;
+}
+.factory_manage_item_img{
+    width: 100%;
+}
+.factory_main_warp{
+    position: relative;
+}
+.factory_second_nav{
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 99;
+    margin-top: 8rem;
+    cursor: pointer;
+    font-size: 0.0785rem;
+    color: #000;
+}

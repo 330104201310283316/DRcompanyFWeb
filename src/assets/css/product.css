@@ -1,0 +1,32 @@
+.product{
+    
+}
+.paroduct_player{
+    width: 100%;
+}
+.product_introduce_warp{
+    padding-top: 2.1428rem;
+    padding-bottom: 2.1428rem;
+}
+.product_introduce_warp_item{
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+    /* font-family: brown; */
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: #000;
+    padding-left: 2.1428rem;
+    padding-right: 2.1428rem;
+    font-size: 1.2rem;
+    padding-top: 2rem;   
+}
+.paroduct_player{
+/*    background: url(https://i.ytimg.com/vi_webp/0wGZfZiAjLo/sddefault.webp) no-repeat; */
+    background-color: #000000;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.video-product-bg{
+    width: 60%;
+}

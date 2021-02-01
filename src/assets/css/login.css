@@ -1,0 +1,122 @@
+.login-page-headline {
+    font-size: 48px;
+    letter-spacing: 1.29px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 30px auto 10px;
+    padding: 0;
+    font-family: Univers LT Std,sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    padding-top: 100px;
+    margin-bottom: 70PX;
+}
+.in-title{
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: 400;
+  color: #000000; 
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 41px;
+  padding-top: 65px;
+  letter-spacing: .75px;
+}
+.form-list-warp{
+    width: 1160px;
+    border-top: 1px solid #B2B1B1;
+    margin: 0 auto;
+}
+.form-list{
+/*    width: 90%; */
+    margin: 0 auto;
+}
+.login-content{
+    padding-top: 5%;
+    width: 50%; 
+}
+.login-warp{
+    width: 70%;
+    margin: 0 auto;
+}
+.create-content{
+   padding-top: 5%;
+   border-left: 1px solid #B2B1B1;
+   margin-bottom: 5%;
+}
+
+input{
+    outline:none;
+}
+
+/* 测试样式 */
+.md-field{
+    font-size: 14px;
+    letter-spacing: .75px;
+    line-height: 1;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    padding: 17px 20px;
+    border: 1px solid #e1e0e0;
+    border-radius: 0;
+    background: #fff;
+    flex: 1;
+    filter: unset;
+    box-shadow: none;
+}
+.md-field label{
+    font-size: 14px !important;
+    left: 17px !important;
+    letter-spacing: .75px !important;
+    top:14px !important; 
+}
+.md-field:after,.md-field:before{
+    display: none !important;
+}
+.md-field.md-focused label{
+    top:-10px !important;
+    background-color: #fff !important;
+    padding: 0 5px;
+    font-size: 12px !important;
+    color: rgba(0,0,0,0.54) !important;
+}
+/* 表单样式 */
+.login-form-headline{
+    margin-bottom: 30px;
+}
+.login-form{
+}
+.login-form__submit-button{
+    width: 100%;
+    margin: 30px 0 15px;
+    min-height: 50px;
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    box-shadow: none;
+}
+
+
+/* new */
+.login_input{
+    font-size:1rem;
+    letter-spacing: .75px;
+    line-height: 1;
+    width: 100%;
+    max-width: 100%;
+    height:3.5714rem;
+    padding: 17px 20px;
+    border: 1px solid #e1e0e0;
+    margin-bottom: 2rem;
+}
+.login_submit{
+    width: 100%;
+    margin: 30px 0 15px;
+    min-height: 50px;
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    cursor: pointer;
+}

@@ -24,7 +24,7 @@
                     <img class="factory_partner_img3" src="../../assets/img/aboutUs/factory_partner3.png" />
                     <img class="factory_partner_img4" src="../../assets/img/aboutUs/factory_partner4.png" />
                 </div>
-                <div class="factory_video">
+                <div class="factory_video" id="tao_company">
                     <p class="factory_video_title">TAO & Company, Inc</p>
                     <div class="factory_video_info">
                         <div class="factory_video_info_item">Lcation<br/>HANZHOU,CHINA</div>
@@ -35,7 +35,7 @@
                     <div class="factory_video_player">  
                     </div>
                 </div>
-                <div class="factory_video">
+                <div class="factory_video" id="tao_company2">
                     <p class="factory_video_title">Stmary (Guangde) Fashion Co,.Ltd</p>
                     <div class="factory_video_info">
                         <div class="factory_video_info_item">Lcation<br/>Anhui,CHINA</div>
@@ -46,7 +46,7 @@
                     <div class="factory_video_player">  
                     </div>
                 </div>
-                <div class="factory_manage">
+                <div class="factory_manage" id="tao_company3">
                     <div class="factory_manage_item">
                         <div class="factory_manage_item_text" style="padding-right: 6.7142rem;padding-top: 5rem;">
                             <p class="factory_manage_item_text_p2">Material Management</p>
@@ -141,9 +141,9 @@
                 </div>
             </div>
             <ul class="factory_second_nav">
-                <li>TAO & Company, Inc</li>
-                <li>Stmary (Guangde) Fashion Co,.Ltd</li>
-                <li>Management</li>
+                <li v-scroll-to="'#tao_company'">TAO & Company, Inc</li>
+                <li v-scroll-to="'#tao_company2'">Stmary (Guangde) Fashion Co,.Ltd</li>
+                <li v-scroll-to="'#tao_company3'">Management</li>
             </ul>
         </div>
         <footerBar />

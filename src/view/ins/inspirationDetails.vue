@@ -13,7 +13,7 @@
     import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
     export default {
-        name: 'index',
+        name: 'inspirationDetails',
         components: {
             TopBar,
             FooterBar

@@ -9,11 +9,13 @@ import {message} from 'ant-design-vue';
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
+import VueScrollTo from 'vue-scrollto';
 
 
 Vue.config.productionTip = false
 Vue.use(Antd)
 Vue.use(VueMaterial)
+Vue.use(VueScrollTo)
 Vue.prototype.$message = message;
 
 new Vue({

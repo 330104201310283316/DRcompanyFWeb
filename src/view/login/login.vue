@@ -80,11 +80,12 @@
                         window.localStorage.setItem('token', token)
                         this.$router.push({ path:'/Inspiration'})
                     }else{
-                        message.info('This is a normal message');
+                        //message.info('This is a normal message');
                     }
                 })
                 .catch(function (error) {
-                     message.info(error,'This is a normal message');
+					console.log(error);
+                     //message.info(error,'This is a normal message');
                 });
             },
         },

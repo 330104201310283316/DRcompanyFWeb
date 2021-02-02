@@ -39,7 +39,7 @@
                     </a-col>
                     <a-col :span="4" v-for="(image,index) in imageList" :key="index">
                         <img class="second_img" :src="image.image" />
-                        <p class="second-text" @click="clickSecondNav(image.title)">{{image.title}}</p>
+                        <p style="color: #fff;" class="second-text" @click="clickSecondNav(image.title)">{{image.title}}</p>
                     </a-col>
                     <a-col :span="2">
                     </a-col>

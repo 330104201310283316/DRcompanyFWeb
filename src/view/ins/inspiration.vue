@@ -33,7 +33,7 @@
     import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
     export default {
-        name: 'index',
+        name: 'inspiration',
         components: {
             TopBar,
             FooterBar

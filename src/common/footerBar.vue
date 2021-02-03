@@ -1,5 +1,5 @@
 <template>
-    <div class="footer-bar-page" :class="{showFooter:showFooter}">
+    <div style="color: #ff6d37;" class="footer-bar-page" :class="{showFooter:showFooter}">
         <div class="foot-warp">
             <div class="foot-share">
                 <a-icon class="facebook" type="facebook" />

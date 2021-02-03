@@ -11,7 +11,7 @@
                             <div class="login-form">
                                 <input v-model="loginName" class="login_input" placeholder="USERNAME" onfocus="this.placeholder='' " onblur="this.placeholder='USERNAME' "/>
                                 <input v-model="passWord" class="login_input" placeholder="PASSWORD" onfocus="this.placeholder='' " onblur="this.placeholder='PASSWORD' "/>
-                               <button  @click="Login()" aria-label="Log in" type="submit" class="login_submit">Log in</button>
+                               <button  @click="Login" aria-label="Log in" type="submit" class="login_submit">Log in</button>
                             </div> 
                         </div>
                     </a-col>
@@ -37,6 +37,7 @@
     import TopBar from '../../common/topBar.vue'
     import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
+    import { message } from 'ant-design-vue'
 	export default {
 		name: 'login',
 		components: {
@@ -54,21 +55,45 @@
         },
         methods:{
             Register:function(){
+                if(this.userName ==""){    
+                    message.info('The user name cannot be empty');
+                    return
+                }
+                if(this.email ==""){
+                    message.info('The email cannot be empty');
+                    return
+                }
+                if(this.comPany ==""){
+                    message.info('The comPany cannot be empty');
+                    return
+                }
                 var url ="http://192.168.3.49:8081/api/dr/Login/Register";
                 axios.post(url, {
                     nickName: this.userName,       
                     email: this.email,
                     comPany:this.comPany
                 })
-                .then(function (response) {
-                    console.log(response)
-                    this.$router.push({ path: '/login'})
+                .then(function (data) {
+                    if(data.data.code == 200){
+                        message.success('This is a success message');
+                    }else{
+                        message.error(data.data.message);
+                    }
                 })
                 .catch(function (error) {
-                console.log(error);
+                   message.info(error,'This is a normal message');
+                   
                 });
             },
             Login:function(){
+                if(this.loginName ==""){
+                    message.info('The loginName cannot be empty');
+                    return
+                }
+                if(this.passWord ==""){
+                    message.info('The passWord cannot be empty');
+                    return
+                }
                 var url ="http://192.168.3.49:8081/api/dr/Login/AuthLogin";
                 axios.post(url, {
                     userName: this.loginName, 
@@ -77,15 +102,14 @@
                 .then(function (data) {
                     if(data.data.code == 200){
                         const token = data.data.data.token;
-                        window.localStorage.setItem('token', token)
-                        this.$router.push({ path:'/Inspiration'})
+                        window.localStorage.setItem('token', token);
+                        this.$router.push({ path: "/InspirationDetails"})
                     }else{
-                        //message.info('This is a normal message');
+                        message.error(data.data.message);
                     }
                 })
                 .catch(function (error) {
-					console.log(error);
-                     //message.info(error,'This is a normal message');
+                     message.info(error,'This is a normal message');
                 });
             },
         },

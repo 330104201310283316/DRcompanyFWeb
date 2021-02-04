@@ -423,18 +423,29 @@
 					</div>
 			</div>
 		</div>
-		<FooterBar />
+		<!-- <FooterBar /> -->
+        <div class="foot-warp" style="background-color: #ff6d37;height: 80px;width: 100%;">
+            <div  style="width: 1000px;margin: 0 auto;">
+                <div class="foot-share">
+                    <a-icon class="facebook" type="facebook" />
+                    <a-icon class="twitter" type="twitter" />
+                </div>
+                <div class="foot-copy">
+                    <p>Copyright © 2021 TAO. All rights reserved.</p>
+                </div>    
+            </div>
+        </div>
 	</div>
 </template>
 
 <script>
     import TopBar from '../../common/topBar.vue'
-    import FooterBar from '../../common/footerBar.vue'
+    // import FooterBar from '../../common/footerBar.vue'
 export default {
 	name: 'App',
 	components: {
         TopBar,
-        FooterBar
+        // FooterBar
 	},
 }
 </script>

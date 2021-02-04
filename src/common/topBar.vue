@@ -23,9 +23,9 @@
 				<a-row :class="{'sod-nav':isTop,'sod-nav1':!isTop}" type="flex" justify="space-around">
 					<a-col :span="2">
 					</a-col>
-                    <a-col :span="4" v-for="(image,index) in imageList" :key="index">
+                    <a-col :span="4" v-for="(image,index) in imageList" :key="index" @click="clickSecondNav(image.title)" style="cursor: pointer;">
                         <img class="second_img" :src="image.image" />
-                        <p class="second-text" @click="clickSecondNav(image.title)">{{image.title}}</p>
+                        <p class="second-text">{{image.title}}</p>
                     </a-col>
 					<a-col :span="2">
 					</a-col>
@@ -38,7 +38,7 @@
 
 <script>
 	export default {
-		name: 'topBar2',
+		name: 'topBar',
         data: function(){
             return {
 				showImageList:false,

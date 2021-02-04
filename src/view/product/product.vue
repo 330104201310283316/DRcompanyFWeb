@@ -23,19 +23,31 @@
             </a-row>
             
         </div>
-         <footerBar />
+       <!--  <footerBar /> -->
+       <div class="foot-warp" style="background-color: #72984b;height: 80px;width: 100%;">
+           <div  style="width: 1000px;margin: 0 auto;">
+               <div class="foot-share">
+                   <a-icon class="facebook" type="facebook" />
+                   <a-icon class="twitter" type="twitter" />
+               </div>
+               <div class="foot-copy">
+                   <p>Copyright © 2021 TAO. All rights reserved.</p>
+               </div>    
+           </div>
+       </div>
     </div>
 </template>
 
 <script>
     import TopBar from '../../common/topBar.vue'
-    import FooterBar from '../../common/footerBar.vue'
+    // import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
+    import { url } from '../../../url.json'
     export default {
        name: 'product',
        components: {
            TopBar,
-           FooterBar
+           // FooterBar
        },
        data() {
            return {
@@ -46,8 +58,7 @@
        },
        mounted(){
            var type = this.$route.query.type;
-           var url ="http://192.168.3.49:8081/api/dr/PictureUpLoad/PhotoList";
-           axios.get(url,{
+           axios.get(url+'/api/dr/PictureUpLoad/PhotoList',{
                params:{photoType:type}   
            }).then((data)=>{
                console.log(data)

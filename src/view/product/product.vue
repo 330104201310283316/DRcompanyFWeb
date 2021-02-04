@@ -1,7 +1,7 @@
 <template>
-    <div class="product">
-        <topBar/>
-        <div class="product_main">
+    <div class="product" style="background-color: #000;">
+        <videoBar/>
+<!--        <div class="product_main">
             <div class="paroduct_player">
                   <video class="video-product-bg" preload="auto" autoPlay muted loop src="../../assets/img/video/pt.mp4"></video> 
             </div>
@@ -22,9 +22,37 @@
                 </a-col>
             </a-row>
             
+        </div> -->
+        
+        
+        <div class="slide_warp_new">
+            <h2 style="color: #fff;text-align: center;padding-bottom: 3.5714rem;">SPRING SUMMER 2021</h2>
+            <div class="module-bd">
+                <carousel-3d>
+                    <slide :index="0" style="height: auto;">
+                        <img src="http://shows.vogueimg.com.cn/showspic/FashionImages/S2021RTW/paris/zuhair-murad/collection/00001-Zuhair-Murad-RTW-Spring-21h.jpg.360X540.jpg" />
+                    </slide>
+                    <slide :index="1">
+                        <img src="http://shows.vogueimg.com.cn/showspic/FashionImages/S2021RTW/paris/deveaux/collection/00001-DEVEAUX-SPRING-21-RTWh.jpg.360X540.jpg" />
+                    </slide>
+                    <slide :index="2">
+                        <img src="http://shows.vogueimg.com.cn/showspic/FashionImages/S2021RTW/paris/adam-lippes/collection/00001-Adam-Lippes-RTW-Spring-21h.jpg.360X540.jpg" />
+                    </slide>
+                    <slide :index="3">
+                        <img src="http://shows.vogueimg.com.cn/showspic/FashionImages/S2021RTW/paris/deveaux/collection/00001-DEVEAUX-SPRING-21-RTWh.jpg.360X540.jpg" />
+                    </slide>
+                    <slide :index="4">
+                        <img src="http://shows.vogueimg.com.cn/showspic/FashionImages/S2021RTW/paris/amanda-wakeley/collection/00001-Amanda-Wakeley-RTW-Spring-21-credit-Jan-Lehnerh.jpg.360X540.jpg" />
+                    </slide>
+                </carousel-3d>
+            </div>
+           
+            
         </div>
+        
+        
        <!--  <footerBar /> -->
-       <div class="foot-warp" style="background-color: #72984b;height: 80px;width: 100%;">
+       <!-- <div class="foot-warp" style="background-color: #72984b;height: 80px;width: 100%;">
            <div  style="width: 1000px;margin: 0 auto;">
                <div class="foot-share">
                    <a-icon class="facebook" type="facebook" />
@@ -34,19 +62,22 @@
                    <p>Copyright © 2021 TAO. All rights reserved.</p>
                </div>    
            </div>
-       </div>
+       </div> -->
     </div>
 </template>
 
 <script>
-    import TopBar from '../../common/topBar.vue'
+    import VideoBar from '../../common/videoBar.vue'
     // import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
     import { url } from '../../../url.json'
+    import { Carousel3d, Slide } from 'vue-carousel-3d';
     export default {
        name: 'product',
        components: {
-           TopBar,
+           VideoBar,
+           Carousel3d,
+           Slide
            // FooterBar
        },
        data() {
@@ -72,4 +103,23 @@
 
 <style>
     @import url("../../assets/css/product.css");
+    .slide_warp_new{
+        padding-top: 16rem;
+    }
+    .module-bd{
+        width: 100%;
+        height: 640px;
+        padding-top: 3px;
+        overflow: hidden;
+        background: url(../../assets/img/product/designers-bg.jpg) bottom center no-repeat;
+    }
+    .carousel-3d-slide{
+        height: 540px !important;
+    }
+    .carousel-3d-slider{
+        height: 540px !important;
+    }
+    .carousel-3d-container{
+        height: 540px !important;
+    }
 </style>

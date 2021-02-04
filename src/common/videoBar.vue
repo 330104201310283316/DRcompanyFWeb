@@ -13,7 +13,7 @@
                 </ul>
             </a-col>
             <a-col :span="4">
-                <span class="video_contact">CONTACT US</span>
+                <span class="video_contact" @click="contantUs">CONTACT US</span>
             </a-col>
 		</a-row>
         <div class="navigation-bg2 slide" :class="{slideDown: showImageList}" >
@@ -30,7 +30,7 @@
                     </ul>
                 </a-col>
                 <a-col :span="4">
-                    <span class="video_contact black_c_con">CONTACT US</span>
+                    <span class="video_contact black_c_con" @click="contantUs">CONTACT US</span>
                 </a-col>
             </a-row>
             <div @mouseleave="onMouseLeave">
@@ -79,8 +79,8 @@
             sustainablity:function(){
                 this.$router.push({ path: '/sustainablity' })
             },
-            login:function(){
-                this.$router.push({ path: '/login' })
+            contantUs:function(){
+                this.$router.push({ path: '/contantUs' })
             },
             onMouseover:function(name){
 				if(name === 'Products'){

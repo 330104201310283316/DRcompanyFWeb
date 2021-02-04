@@ -12,6 +12,7 @@ import Ethical from '../view/sus/Ethical.vue';
 import Inspiration from '../view/ins/inspiration.vue';
 import InspirationDetails from '../view/ins/inspirationDetails.vue';
 import login from '../view/login/login.vue';
+import ContantUs from '../view/login/contantUs.vue';
 //定义routers路由的集合，数组类型
 const routes  =[
 	{ 
@@ -57,6 +58,10 @@ const routes  =[
     {
         path: '/login', 
         component: login,
+    },
+    {
+        path: '/contantUs', 
+        component: ContantUs,
     },
 ]
 

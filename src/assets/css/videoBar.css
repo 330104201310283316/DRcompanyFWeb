@@ -30,6 +30,7 @@
     float: right;
     padding-right: 7.1428rem;
     line-height: 5.7142rem;
+    cursor: pointer;
 }
 /* 有背景色 */
 .video_top_bar_bg{

@@ -26,7 +26,9 @@
         
         
         <div class="slide_warp_new">
-            <h2 style="color: #fff;text-align: center;padding-bottom: 3.5714rem;">SPRING SUMMER 2021</h2>
+            <div class="slide_t_warp">
+                <h2 style="color: #fff;text-align: center;padding-bottom: 3.5714rem;">SPRING SUMMER 2021</h2>
+            </div>
             <div class="module-bd">
                 <carousel-3d>
                     <slide :index="0" style="height: auto;">
@@ -122,4 +124,10 @@
     .carousel-3d-container{
         height: 540px !important;
     }
+    .slide_t_warp{
+       /* background:url('http://css.selfimg.com.cn/vogue/www-v2/images/global/fashion-slide.png') no-repeat ;
+        margin: 0 auto;
+        width: 30.7142rem; */
+    }
+    
 </style>

@@ -15,7 +15,7 @@
 					</ul>
 				</a-col>
 				<a-col :span="4">
-					<span class="contact2" style="color: #161616;line-height: 80px;">CONTACT US</span>
+					<span class="contact2" style="color: #161616;line-height: 80px;" @click="contantUs">CONTACT US</span>
 				</a-col>
 			</a-row>
 			<div class="slide" :class="{slideDown: showImageList}" 
@@ -80,9 +80,9 @@
             sustainablity:function(){
                 this.$router.push({ path: '/sustainablity' })
             },
-            login:function(){
-                this.$router.push({ path: '/login' })
-            },
+           contantUs:function(){
+               this.$router.push({ path: '/contantUs' })
+           },
            onMouseover:function(name){
                 if(name === 'Products'){
                     this.imageList = [

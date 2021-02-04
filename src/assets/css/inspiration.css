@@ -1,6 +1,7 @@
 .ins_warp{
     margin-top: 5.7142rem;
     background-color: #f4f4f4;
+    padding-bottom: 5rem;
 }
 .ins_banner_bg{
     background: url(../img/ins/product_bg.png) no-repeat;
@@ -101,8 +102,8 @@
 
 
 .go-login-warp{
-    height: 200px;
-    margin-top: 10rem;
+    height: 100px;
+    margin-top: 5rem;
 }
 .go-login{
     width: 160px;

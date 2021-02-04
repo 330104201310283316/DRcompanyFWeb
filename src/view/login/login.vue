@@ -23,7 +23,7 @@
                                 <input v-model="userName" class="login_input" placeholder="USERNAME" onfocus="this.placeholder='' " onblur="this.placeholder='USERNAME' "/>
                                 <input v-model="email" class="login_input" placeholder="EMAIL" onfocus="this.placeholder='' " onblur="this.placeholder='EMAIL' "/>
                                 <input v-model="comPany" class="login_input" placeholder="COMPANY" onfocus="this.placeholder='' " onblur="this.placeholder='COMPANY' "/>
-                                <button @click="Register()" aria-label="Log in" type="submit" class="login_submit">Register now</button>
+                                <button @click="Register" aria-label="Log in" type="submit" class="login_submit">Register now</button>
                             </div>
                          </div>
                     </a-col>
@@ -94,6 +94,7 @@
                     message.info('The passWord cannot be empty');
                     return
                 }
+                var that =this;
                 axios.post(url+'/api/dr/Login/AuthLogin', {
                     userName: this.loginName, 
                     passWord: this.passWord,
@@ -101,14 +102,14 @@
                 .then(function (data) {
                     if(data.data.code == 200){
                         const token = data.data.data.token;
-                        window.localStorage.setItem('token', token);
-                        this.$router.push({ path: "/InspirationDetails"})
+                        window.localStorage.setItem(token);
+                        that.$router.push({ path: "/Inspiration"})
                     }else{
                         message.error(data.data.message);
                     }
                 })
                 .catch(function (error) {
-                     message.info(error,'This is a normal message');
+                     message.info(error);
                 });
             },
         },

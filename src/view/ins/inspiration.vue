@@ -22,7 +22,7 @@
                 </a-row>
             </div>
         </div>
-        <div class="go-login-warp">
+        <div class="go-login-warp" v-show="showMore">
             <button class="go-login" @click="Gologin">VIEW MORE</button>
         </div>
       <!--  <footerBar/> -->
@@ -53,6 +53,7 @@
         data() {
             return {
                 dataList:[],
+                showMore:true
             }
         },
         methods:{
@@ -69,14 +70,19 @@
             }
         },
         mounted(){
+            var token = localStorage.getItem('token');
+            console.log(token,'wangting')
             axios({
                 method:'get',
                 url:url+'/api/dr/PictureUpLoad/PictureList',
                 headers:{
-                    'Authorization':'ff0e9033-7fa4-4c11-8692-ce2a89db8d70'
+                    'Authorization':token
                 }
             }).then((data)=>{
                 this.dataList = data.data.data;
+                if(this.dataList.length>4){
+                    this.showMore=false
+                }
             }).catch((data)=>{
                 console.log(data,'2')
             }) 

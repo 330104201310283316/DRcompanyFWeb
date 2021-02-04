@@ -38,6 +38,7 @@
     import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
     import { message } from 'ant-design-vue'
+	import { url } from '../../../url.json'
 	export default {
 		name: 'login',
 		components: {
@@ -67,8 +68,7 @@
                     message.info('The comPany cannot be empty');
                     return
                 }
-                var url ="http://192.168.3.49:8081/api/dr/Login/Register";
-                axios.post(url, {
+                axios.post(url+'/api/dr/Login/Register', {
                     nickName: this.userName,       
                     email: this.email,
                     comPany:this.comPany
@@ -94,8 +94,7 @@
                     message.info('The passWord cannot be empty');
                     return
                 }
-                var url ="http://192.168.3.49:8081/api/dr/Login/AuthLogin";
-                axios.post(url, {
+                axios.post(url+'/api/dr/Login/AuthLogin', {
                     userName: this.loginName, 
                     passWord: this.passWord,
                 })

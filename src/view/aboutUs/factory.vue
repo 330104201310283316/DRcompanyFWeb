@@ -159,6 +159,7 @@
             TopBar,
             FooterBar
         },
+		
     }
 </script>
 

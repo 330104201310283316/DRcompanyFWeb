@@ -58,8 +58,11 @@
     float: right;
     padding-right: 100px;
 }
-.sod-nav{
+.sod-nav1{
     background: #FAF9F8;
+}
+.sod-nav{
+	background:rgba(250,249,248,0.5) !important;
 }
 .sod-img{
     margin: 0 auto;

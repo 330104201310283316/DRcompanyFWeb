@@ -32,6 +32,7 @@
     import TopBar from '../../common/topBar.vue'
     import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
+	import { url } from '../../../url.json'
     export default {
         name: 'inspiration',
         components: {
@@ -59,7 +60,7 @@
         mounted(){
             axios({
                 method:'get',
-                url:'http://192.168.3.49:8081/api/dr/PictureUpLoad/PictureList',
+                url:url+'/api/dr/PictureUpLoad/PictureList',
                 headers:{
                     'Authorization':'ff0e9033-7fa4-4c11-8692-ce2a89db8d70'
                 }

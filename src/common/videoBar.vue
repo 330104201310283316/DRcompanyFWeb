@@ -1,5 +1,5 @@
 <template>
-    <div class="video_top_bar">
+    <div class="video_top_bar" style="min-width:1000px;">
         <a-row>
             <a-col :span="4">
                 <img class="video_top_logo" src="../assets/img/images/video-logo-white.png" />
@@ -37,9 +37,9 @@
                 <a-row class="second_nav" type="flex" justify="space-around">
                     <a-col :span="2">
                     </a-col>
-                    <a-col :span="4" v-for="(image,index) in imageList" :key="index">
+                    <a-col style="cursor: pointer;" :span="4" v-for="(image,index) in imageList" :key="index" @click="clickSecondNav(image.title)">
                         <img class="second_img" :src="image.image" />
-                        <p style="color: #fff;" class="second-text" @click="clickSecondNav(image.title)">{{image.title}}</p>
+                        <p style="color: #fff;" class="second-text">{{image.title}}</p>
                     </a-col>
                     <a-col :span="2">
                     </a-col>

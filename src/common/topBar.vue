@@ -20,7 +20,7 @@
 			</a-row>
 			<div class="slide" :class="{slideDown: showImageList}" 
 				@mouseleave="onMouseLeave">
-				<a-row class="sod-nav" type="flex" justify="space-around">
+				<a-row :class="{'sod-nav':isTop,'sod-nav1':!isTop}" type="flex" justify="space-around">
 					<a-col :span="2">
 					</a-col>
                     <a-col :span="4" v-for="(image,index) in imageList" :key="index">
@@ -43,8 +43,17 @@
             return {
 				showImageList:false,
                 imageList:[],
+				isTop:true,
             }
         },
+		beforeCreate: function () {
+			window.addEventListener('scroll',()=>{
+				this.isTop = (document.documentElement.scrollTop || document.body.scrollTop) < 100;
+			});
+		},
+		beforeDestory: function(){
+			window.removeEventListener('scroll');
+		},
 		methods:{
 			company:function(){
 				this.$router.push({ path: '/company' })

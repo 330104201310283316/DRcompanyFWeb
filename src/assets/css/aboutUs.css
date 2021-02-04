@@ -116,15 +116,15 @@
     width: 100%;
 }
 .factory_main_warp{
-    position: relative;
 }
 .factory_second_nav{
-    position: absolute;
+    position: fixed;
     left: 0;
     top:0;
     z-index: 99;
-    margin-top: 8rem;
+    margin-top: 60vh;
     cursor: pointer;
     font-size: 0.0785rem;
     color: #000;
+    bottom: 0px;
 }

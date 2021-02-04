@@ -2,7 +2,7 @@
     <div class="video_top_bar" style="min-width:1000px;">
         <a-row>
             <a-col :span="4">
-                <img class="video_top_logo" src="../assets/img/images/video-logo-white.png" />
+                <img @click="home" class="video_top_logo" src="../assets/img/images/video-logo-white.png" />
             </a-col>
             <a-col :span="16">
                 <ul class="video_navigation_list">
@@ -19,7 +19,7 @@
         <div class="navigation-bg2 slide" :class="{slideDown: showImageList}" >
             <a-row class="video_top_bar_bg">
                 <a-col :span="4">
-                    <img class="video_top_logo" src="../assets/img/images/video-logo.png" />
+                    <img @click="home" class="video_top_logo" src="../assets/img/images/video-logo.png" />
                 </a-col>
                 <a-col :span="16">
                     <ul class="video_navigation_list black_color">
@@ -61,9 +61,6 @@
             
         },
 		methods:{
-			// company:function(){
-			// 	this.$router.push({ path: '/company' })
-			// },
             factory:function(){
                 this.$router.push({ path: '/factory' })
             },
@@ -79,10 +76,6 @@
             sustainability:function(){
                 this.$router.push({ path: '/sustainablity' })
             },
-            // product:function(){
-            //     this.$router.push({ path: '/product' })
-            // },
-
             sustainablity:function(){
                 this.$router.push({ path: '/sustainablity' })
             },

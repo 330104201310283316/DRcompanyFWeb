@@ -30,12 +30,12 @@
                 </a-row>    
             </div>
         </div>
-        <footerBar />
+      <!--  <footerBar /> -->
     </div>
 </template>
 <script>
     import TopBar from '../../common/topBar.vue'
-    import FooterBar from '../../common/footerBar.vue'
+    // import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
     import { message } from 'ant-design-vue'
 	import { url } from '../../../url.json'
@@ -43,7 +43,7 @@
 		name: 'login',
 		components: {
             TopBar,
-            FooterBar
+            // FooterBar
 		},
         data() {
             return {

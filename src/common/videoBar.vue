@@ -1,6 +1,6 @@
 <template>
     <div class="video_top_bar" style="min-width:1000px;">
-        <a-row>
+       <a-row>
             <a-col :span="4">
                 <img @click="home" class="video_top_logo" src="../assets/img/images/video-logo-white.png" />
             </a-col>
@@ -61,23 +61,11 @@
             
         },
 		methods:{
-            factory:function(){
-                this.$router.push({ path: '/factory' })
-            },
-            whyUs:function(){
-                this.$router.push({ path: '/whyUs' })
-            },
             home:function(){
                 this.$router.push({ path: '/' })
             },
             inspiration:function(){
                 this.$router.push({ path: '/inspiration' })
-            },
-            sustainability:function(){
-                this.$router.push({ path: '/sustainablity' })
-            },
-            sustainablity:function(){
-                this.$router.push({ path: '/sustainablity' })
             },
             contantUs:function(){
                 this.$router.push({ path: '/contantUs' })
@@ -153,5 +141,5 @@
 </script>
 
 <style>
-    @import url("../assets/css/videoBar.css");
+   @import url("../assets/css/videoBar.css");
 </style>

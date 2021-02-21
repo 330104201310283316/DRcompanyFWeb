@@ -60,6 +60,7 @@
     font-size: 14px;
     float: right;
     padding-right: 100px;
+    cursor: pointer;
 }
 
 .contact2{
@@ -68,6 +69,7 @@
   font-size: 14px;
   float: right;
   padding-right: 100px;  
+  cursor: pointer;
 }
 
 .sod-nav{

@@ -25,7 +25,7 @@
 					</a-col>
                     <a-col :span="4" v-for="(image,index) in imageList" :key="index" @click="clickSecondNav(image.title)" style="cursor: pointer;">
                         <img class="second_img" :src="image.image" />
-                        <p class="second-text">{{image.title}}</p>
+                        <p :class="{'second-text':isTop,'second-text1':!isTop}">{{image.title}}</p>
                     </a-col>
 					<a-col :span="2">
 					</a-col>
@@ -55,30 +55,11 @@
 			window.removeEventListener('scroll');
 		},
 		methods:{
-			company:function(){
-				this.$router.push({ path: '/company' })
-			},
-            factory:function(){
-                this.$router.push({ path: '/factory' })
-            },
-            whyUs:function(){
-                this.$router.push({ path: '/whyUs' })
-            },
             home:function(){
                 this.$router.push({ path: '/' })
             },
             inspiration:function(){
                 this.$router.push({ path: '/inspiration' })
-            },
-            sustainability:function(){
-                this.$router.push({ path: '/sustainablity' })
-            },
-            product:function(){
-                this.$router.push({ path: '/product' })
-            },
-
-            sustainablity:function(){
-                this.$router.push({ path: '/sustainablity' })
             },
            contantUs:function(){
                this.$router.push({ path: '/contantUs' })

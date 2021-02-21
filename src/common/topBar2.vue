@@ -15,7 +15,7 @@
 					</ul>
 				</a-col>
 				<a-col :span="4">
-					<span class="navigation-no-bg-contact2">CONTACT US</span>
+					<span class="navigation-no-bg-contact2" style="cursor: pointer;">CONTACT US</span>
 				</a-col>
 			</a-row>
 		</div>
@@ -30,12 +30,12 @@
 						<li @click="home" @mouseover="onMouseLeave()" class="home">Home</li>
 						<li @mouseover="onMouseover('About Us')">About Us</li>
 						<li @mouseover="onMouseover('Products')">Products</li>
-						<li @click="inspiration" @mouseover="onMouseLeave()">Inspiration</li>
+						<li @click="inspiration">Inspiration</li>
 						<li @click="sustainability" @mouseover="onMouseLeave()">Sustainability</li>
 					</ul>
 				</a-col>
 				<a-col :span="4">
-					<span class="contact2" style="line-height: 80px;">CONTACT US</span>
+					<span class="contact2" style="line-height: 80px;cursor: pointer;">CONTACT US</span>
 				</a-col>
 			</a-row>
 			<div @mouseleave="onMouseLeave">

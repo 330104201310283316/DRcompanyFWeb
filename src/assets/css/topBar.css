@@ -57,12 +57,13 @@
     font-size: 14px;
     float: right;
     padding-right: 100px;
+    cursor: pointer;
 }
 .sod-nav1{
     background: #FAF9F8;
 }
 .sod-nav{
-	background:rgba(250,249,248,0.1) !important;
+	background:rgba(250,249,248,0.3) !important;
 }
 .sod-img{
     margin: 0 auto;
@@ -109,6 +110,14 @@ li{
    }
    
 }
+.second-text1{
+    color: #000;
+    text-align: center;
+}
+.second-text{
+    color: #fff;
+}
+
 
 /* 底部导航 */
 
@@ -153,5 +162,7 @@ li{
 .facebook :hover{
      font-size: 30px;
 }
+
+
 
 

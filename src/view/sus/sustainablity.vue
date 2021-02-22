@@ -2,7 +2,8 @@
     <div class="sus-page">
         <TopBar/>
         <div>
-             <video class="sus-video" preload="auto" autoPlay muted src="../../assets/img/sus/001.mp4"></video> 
+             <!-- <video class="sus-video" preload="auto" autoPlay muted src="../../assets/img/sus/001.mp4"></video> -->
+             <img src="../../assets/img/sus/001_1.png" />
         </div>
         <div class="sus_main-warp">
             <div class="sus_main">
@@ -223,10 +224,7 @@
                         Improvement continues…                      
                     </p>
                 </div>
-                
-                
-                
-                
+
             </div>
            
         </div>

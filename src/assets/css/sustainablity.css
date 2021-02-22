@@ -8,7 +8,7 @@
 /*    padding-bottom: 14.2857rem; */
 }
 .sus_text_warp{
-    padding-bottom: 13.4285rem;
+    padding-bottom: 8rem;
 }
 .sus_text_p18{
     font-size: 1.2857rem;
@@ -18,8 +18,11 @@
     font-weight: bold;
 }
 .sus_text_p14{
-    font-size: 1rem;
-    color: #858585;
+    font-size: 1.1rem;
+    color: #000;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    text-align: justify;
+    
 }
 .sus_text_p30{
     font-size: 30px;

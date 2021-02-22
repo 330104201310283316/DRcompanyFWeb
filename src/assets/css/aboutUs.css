@@ -27,7 +27,7 @@
     height: auto;
 }
 .factory_main{
-    width:71.4285rem;
+    width: 1000px;
     margin: 0 auto;
 /*    padding-bottom: 14.2857rem; */
     padding-top: 7.1428rem;
@@ -36,6 +36,7 @@
     font-size: 1.1rem;
     color: #000;
     font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    text-align: justify;
 }
 .factory_partner{
     display: flex;
@@ -98,7 +99,7 @@
 }
 .factory_manage_item_text_p2{
    font-size: 1.7rem;
-   color: #000;  
+   color: #000; 
 }
 .factory_manage_item_text_p1{
    font-size: 1.2rem;
@@ -108,6 +109,7 @@
     font-size: 1.1rem;
     color: #000;
     font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    text-align: justify;
 }
 .factory_manage_item_img-warp{
     width: 50%;

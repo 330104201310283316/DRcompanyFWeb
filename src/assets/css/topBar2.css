@@ -35,7 +35,6 @@
     font-weight: bold;
     line-height: 70px;
     color: #FE5368;
-    font-family: Arial;
     padding-left: 100px;
 }
 
@@ -141,7 +140,6 @@ li{
     cursor: pointer;
     white-space: nowrap;
     letter-spacing: .75px;
-    font-family: Arial;
     font-size: 14px;
     letter-spacing: 2.57px;
     font-weight: 300;

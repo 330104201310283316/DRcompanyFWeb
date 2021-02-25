@@ -106,7 +106,6 @@
     padding-left: 30px;
     line-height: 70px;
     color: #FE5368;
-    font-family: Arial;
 }
 .video-nav-list li{
     list-style: none;
@@ -114,7 +113,6 @@
     line-height: 80px; 
     color: #858585;
     font-size: 14px;
-    font-family: Arial;
     padding-left: 35px;
     padding-right: 35px;
 }

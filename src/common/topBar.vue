@@ -59,7 +59,7 @@
                 this.$router.push({ path: '/' })
             },
             inspiration:function(){
-                this.$router.push({ path: '/inspiration' })
+                this.$router.push({ path: '/inspiration2' })
             },
            contantUs:function(){
                this.$router.push({ path: '/contantUs' })
@@ -121,7 +121,7 @@
                 }else if(title === "WHY US"){
                     this.$router.push({ path: '/whyUs' })
                 }else if(title === "YOUTH"){
-                    this.$router.push({ path: '/product?type=0' })
+                    this.$router.push({ path: '/product2?type=0' })
                 }else if(title === "ELEGANT"){
                     this.$router.push({ path: '/product?type=1' })
                 }else if(title === "ETHICAL"){

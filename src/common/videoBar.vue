@@ -6,6 +6,7 @@
             </a-col>
             <a-col :span="16">
                 <ul class="video_navigation_list">
+                    <li @click="home" class="home">HOME</li>
                     <li @mouseover="onMouseover('About Us')">ABOUT US</li>
                     <li @mouseover="onMouseover('Products')">PRODUCTS</li>
                     <li @click="inspiration" class="home">INSPIRATION</li>
@@ -23,10 +24,11 @@
                 </a-col>
                 <a-col :span="16">
                     <ul class="video_navigation_list black_color">
-                        <li @mouseover="onMouseover('About Us')">ABOUT US</li>
-                        <li @mouseover="onMouseover('Products')">PRODUCTS</li>
+                        <li @click="home" class="home">HOME</li>
+                        <li @mouseover="onMouseover('About Us')" class="home">ABOUT US</li>
+                        <li @mouseover="onMouseover('Products')" class="home">PRODUCTS</li>
                         <li @click="inspiration" class="home">INSPIRATION</li>
-                        <li @mouseover="onMouseover('Sustainability')">SUSTAINABILITY</li>
+                        <li @mouseover="onMouseover('Sustainability')" class="home">SUSTAINABILITY</li>
                     </ul>
                 </a-col>
                 <a-col :span="4">
@@ -127,9 +129,9 @@
                 }else if(title === "WHY US"){
                     this.$router.push({ path: '/whyUs' })
                 }else if(title === "YOUTH"){
-                    this.$router.push({ path: '/product?type=0' })
+                    this.$router.push({ path: '/product2?type=0' })
                 }else if(title === "ELEGANT"){
-                    this.$router.push({ path: '/product?type=1' })
+                    this.$router.push({ path: '/product2?type=1' })
                 }else if(title === "ETHICAL"){
                     this.$router.push({ path: '/Ethical' })
                 }else if(title === "SUSTAINABLITY"){

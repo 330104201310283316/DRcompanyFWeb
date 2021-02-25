@@ -1,7 +1,10 @@
 <template>
     <div class="login-page" @scroll="scrollGet($event)" ref="scroll">
         <topBar/>
-        <p class="in-title">Welcome to TAO</p>
+<!--        <p class="in-title">Welcome to TAO</p> -->
+        <h1 class="in-title header_h1">
+            Welcome
+        </h1>
         <div class="form-list-warp">
             <div class="form-list">
                 <a-row>

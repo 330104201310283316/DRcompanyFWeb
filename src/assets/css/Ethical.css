@@ -2,6 +2,9 @@ p{
 	margin: 0;
 	padding: 0;
 }
+body{
+   color: #000 !important;
+}
 .clearfix:after{
   content: "020"; 
   display: block; 
@@ -19,28 +22,26 @@ p{
 }
 
 .eth-t{
-	font-size: 30px;
+	font-size: 2rem;
 	text-align: center;
-	font-weight: bold;
-	color: #000;
-	padding-top: 30px;
+	font-weight: 400;
+	padding-top: 10px;
 }
-.eth-bg-img{
-	width: 100%;
-	height: auto;
+.eth-bg{
+    background: url(../img/ethical/eth-bg.png) no-repeat;
+    width: 100%;
+    height: 28.5714rem;
+    margin-bottom: 2rem;
 }
 .eth-list{
-	width: 1100px;
+	width: 1000px;
 	margin: 0 auto;
 }
 .eth-list-box{
 	margin-top: 58px;
 }
 .part-t{
-	font-size: 20px;
-	font-family: Arial;
-	font-weight: bold;
-	color: #040404;
+	font-size: 1.5rem;
 	border-bottom: 1px solid #FFC000;
 	width: 290px;
 	padding-bottom: 10px;
@@ -65,17 +66,17 @@ p{
 .o-text{
 	float: left;
 	margin-top: -5px;
-	font-size: 14px;
-	font-family: Arial;
-	font-weight: bold;
-	color: #040404;
+	font-size: 1.2rem;
 }
 .eth-p1{
-	font-size: 14px;
-	font-family: Arial;
-	font-weight: 400;
-	color: #595959;
-	line-height: 18px;
+    font-size: 1rem;
+    letter-spacing: .75px;
+    font-family: Univers LT Std,sans-serif;
+    font-weight: 400;
+    /* line-height: 2; */
+    line-height: 1.7;
+    color: #000;
+    text-align: justify;
 }
 .eth-p-warp{
 	padding-top: 10px;
@@ -92,7 +93,6 @@ p{
 }
 .check{
 	padding-right: 10px;
-	color: #000;
 }
 .eth-p-info{
 	float: left;
@@ -102,13 +102,17 @@ p{
 	float: left;
 	width: 490px;
 }
-.eth-list-img{
+.eth-list-img img{
 	float: left;
 	width: 45%;
+    
+    transition-property: margin-left,margin-right,opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 .eth-img-1{
 	width: 100%;
-	margin-top: 160px;
+/* 	margin-top: 160px; */
 }
 .eth-img-2{
 	width: 100%;
@@ -121,4 +125,44 @@ p{
 .eth-img-5{
 	width: 100%;
 	margin-top: 140px;
+}
+.fadeInUp{
+   margin-left: 0;
+   margin-right: 0;
+   opacity: 1;
+}
+.fadeHide{
+   margin-left: 200px;
+   margin-right: -200px;
+   opacity: 0;
+}
+.fadeInDelay_1{
+    transition-delay: 200ms;
+}
+
+/* 人权 */
+.ethical-content{
+    width: 1100px;
+    margin: 0 auto;
+}
+.ethical-p1{
+	font-size: 1.5rem;
+	border-bottom: 1px solid #FFC000;
+	width: 290px;
+	padding-bottom: 10px;
+	padding-top: 3.5714rem;
+	margin-bottom: 30px;
+}
+.ethical-p2{
+	font-size: 1.3rem;
+    padding-bottom: 0.7142rem;
+}
+.box-text{
+    width: 55%;
+}
+.box-img{
+    width: 45%;
+}
+.ethical-item{
+    display: flex;
 }

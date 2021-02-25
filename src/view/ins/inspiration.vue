@@ -1,9 +1,8 @@
 <template>
-    <div class="inspiration-page">
-        <topBar/>
+    <div class="inspiration-page" style="padding-bottom: 100px;">
+        <newBar/>
         <div class="ins_warp">
-            <div class="ins_banner_bg">
-              <!-- <p class="ins_banner_t">Fashion</p> -->
+            <div class="ins_banner_bg1">
             </div>
             <div class="ins_list">
                 <a-row class="ins_list_item" v-for="item in dataList" :key="item.id">
@@ -25,30 +24,19 @@
         <div class="go-login-warp" v-show="showMore">
             <button class="go-login" @click="Gologin">VIEW MORE</button>
         </div>
-      <!--  <footerBar/> -->
-      <div class="foot-warp" style="background-color: #f29544;height: 80px;width: 100%;">
-          <div  style="width: 1000px;margin: 0 auto;">
-              <div class="foot-share">
-                  <a-icon class="facebook" type="facebook" />
-                  <a-icon class="twitter" type="twitter" />
-              </div>
-              <div class="foot-copy">
-                  <p>Copyright © 2021 TAO. All rights reserved.</p>
-              </div>    
-          </div>
-      </div>
+      <FooterBar />
     </div>
 </template>
 <script>
-    import TopBar from '../../common/topBar.vue'
-    // import FooterBar from '../../common/footerBar.vue'
+    import NewBar from '../../components/newBar.vue'
+    import FooterBar from '../../common/footerBar.vue'
     import axios from 'axios';
 	import { url } from '../../../url.json'
     export default {
         name: 'inspiration',
         components: {
-            TopBar,
-            // FooterBar
+            NewBar,
+            FooterBar
         },
         data() {
             return {

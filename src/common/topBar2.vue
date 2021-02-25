@@ -79,7 +79,7 @@
                 this.$router.push({ path: '/' })
             },
             inspiration:function(){
-                this.$router.push({ path: '/inspiration' })
+                this.$router.push({ path: '/inspiration2' })
             },
             
             sustainability:function(){

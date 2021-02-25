@@ -1,24 +1,32 @@
     @media screen and (min-width: 1680px) {
         html {
            font-size: 14px;
-           font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+           font-family: Univers LT Std,sans-serif;
+           color: #000;
         }
     }
     @media screen and (min-width: 1400px)and (max-width: 1679px){
         html{
             font-size: 13px;
-            font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+            font-family: Univers LT Std,sans-serif;
+            color: #000;
         }
     } 
     @media screen and (min-width: 1200px)and (max-width: 1399px){
         html{
             font-size: 12px;
-            font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+            font-family: Univers LT Std,sans-serif;
+            color: #000;
         }
     } 
     @media screen and (min-width: 1024px) and (max-width: 1199px){
         html{
             font-size: 11px;
-            font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+            font-family: Univers LT Std,sans-serif;
+            color: #000;
         }
     } 
+    html,body{
+         font-family: Univers LT Std,sans-serif;
+         color: #000;
+    }

@@ -1,27 +1,8 @@
 /* 视频页样式 */
-/* https://www.facebook.com/hallhuberfashion */
 .video-full-bg{
     width: 100%;
     height:100vh !important;
     object-fit: fill;
-}
-.video-bg-img1{
-    background: url(../img/video/move-bg.jpg) no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
-}
-.video-bg-img2{
-    background: url(../img/video/move-bg1.jpg) no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
-}
-.video-bg-img3{
-    background: url(../img/video/move-bg2.jpg) no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
 }
 .video-t{
    color: #fff;
@@ -73,18 +54,6 @@
         transform: scale(0.8) rotate(360deg);
         opacity: 0;
     }
-}
-
-.h-fashion-icon-down .fashion-down {
-    background: url(../img/video/jt_icon.svg) no-repeat;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 0.5rem;
-    height: 0.5rem;
-    animation: fixAnit1 7s linear infinite;
-    background-size: cover;
 }
 
 @keyframes fixAnit1{

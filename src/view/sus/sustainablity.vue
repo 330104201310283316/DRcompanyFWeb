@@ -26,16 +26,21 @@
                 Suppliers shall ensure that all employees have appropriate knowledge and experience about environmental issues and processes with potential environmental impacts, as well as resources to enable them effectively to meet their responsibilities.
                 <br />
                 Suppliers should have a full awareness about government-issued environmental regulations, and are encouraged to register with IPE (Institute of Public & Environmental Affairs), while respecting human rights, promoting safe and fair labor practices, and ensuring respect for the environment and high standards of chemical restrictions as well as industry benchmark practices.
-                An environmental management strategy covering care for water, energy, chemical management and waste is required for long-term decision making, together with an organized team to monitor and record all related.
+                <br />
+                An environmental management strategy covering care for water, energy, chemical management and waste is required for long-term decision making, together with an organized team to monitor and record all related
             </p>
             <p class="environmental-p4">
                  Care for Water
             </p>
             <p class="environmental-p3">
                 Water is one of the strategic resources used in the textile industry，especially in growing raw materials such as cotton, and in Wet Process Facilities.
+                <br />
                 Tao is aware of the importance of water as part of the ecosystems, of its shortage and of the need for a responsible use thereof.
+                <br />
                 Therefore, Tao’s suppliers and Wet Process Facilities shall ensure that water used comes from authorized supply sources and oversee consumption thereof by installing flow meters. To optimize it, consumption reduction shall be promoted through the recovery of water of condensing processes or the reuse of cooling water at Wet Process Facilities and other such practices.
+                <br />
                 All Wet Process Facilities which are part of Tao's supply chain shall ensure that all outgoing wastewater from their processes is treated before it is discharged and that the treated wastewater quality meets the requirements of the local legislation, at a minimum.
+                <br />
             </p>
             <p class="environmental-p4">
                 Care for Energy 

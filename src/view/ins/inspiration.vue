@@ -6,18 +6,20 @@
             </div>
             <div class="ins_list">
                 <a-row class="ins_list_item" v-for="item in dataList" :key="item.id">
-                    <a-col :span="12" @click="Details(item.id)">
-                        <div class="ins_item_title">
-                            {{item.pictureTitle}}
-                        </div>
-                        <div class="ins_item_sub">
-                           {{item.pictureExplain}}
-                        </div>
-                        <button class="in-list-btn">READ NOW</button>
-                    </a-col>
-                    <a-col :span="12" class="ins_list_img_box">
-                        <img :src="item.pictureUrl"/>
-                    </a-col>
+                    <div @click="Details(item.id)" style="cursor: pointer;">
+                        <a-col :span="12">
+                            <div class="ins_item_title">
+                                {{item.pictureTitle}}
+                            </div>
+                            <div class="ins_item_sub">
+                               {{item.pictureExplain}}
+                            </div>
+                            <button class="in-list-btn">READ NOW</button>
+                        </a-col>
+                        <a-col :span="12" class="ins_list_img_box">
+                            <img :src="item.pictureUrl"/>
+                        </a-col>
+                    </div>
                 </a-row>
             </div>
         </div>

@@ -129,4 +129,5 @@
 </script>
 
 <style>
+    @import url("../assets/css/topBar.css");
 </style>

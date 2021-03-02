@@ -141,7 +141,6 @@
 		}
 	}
 </script>
-
 <style>
    @import url("../assets/css/videoBar.css");
 </style>
